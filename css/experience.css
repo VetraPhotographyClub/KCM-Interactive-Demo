@@ -313,6 +313,19 @@
   transition: width 0.8s ease;
 }
 
+#hud-ar .hud-top {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 8px;
+}
+
+.hud-ar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* Prompt recap while AR overlay is visible */
 .ar-prompt-panel {
   align-self: center;
