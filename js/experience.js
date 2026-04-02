@@ -361,14 +361,14 @@
       updateGeneratingUI('Sending photo to Veo…', 15);
 
       let operation = await ai.models.generateVideos({
-        model: 'veo-3',
+        model: 'veo-3.1-generate-preview',
         prompt: customPrompt,
         image: { imageBytes: imageData, mimeType },
         config: {
           aspectRatio: '16:9',
           numberOfVideos: 1,
           durationSeconds: 8,
-          personGeneration: 'allow_all',
+          personGeneration: 'allow_adult',
         },
       });
 
